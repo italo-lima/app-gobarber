@@ -13,6 +13,14 @@ interface SelectedNameProps {
   selected: boolean;
 }
 
+interface HourProps {
+  available: boolean;
+  selected: boolean;
+}
+
+interface HourTextProps {
+  selected: boolean;
+}
 export const Container = styled.View`
   flex: 1;
 `;
@@ -34,6 +42,8 @@ export const HeaderTitle = styled.Text`
   font-size: 20px;
   margin-left: 15px;
 `;
+
+export const Content = styled.ScrollView``;
 
 export const UserAvatar = styled.Image`
   width: 56px;
@@ -87,8 +97,60 @@ export const OpenDatePickerButton = styled(RectButton)`
   justify-content: center;
   margin: 0 25px;
 `;
+
 export const OpenDatePickerButtonText = styled.Text`
   font-family: 'RobotoSlab-Medium';
   font-size: 16px;
+  color: #232129;
+`;
+
+export const Schedule = styled.View`
+  padding: 25px 0 15px;
+`;
+
+export const Section = styled.View`
+  margin-bottom: 25px;
+`;
+
+export const SectionTitle = styled.Text`
+  font-size: 18px;
+  color: #999591;
+  font-family: 'RobotoSlab-Regular';
+  margin: 0 25px 10px;
+`;
+
+export const SectionContent = styled.ScrollView.attrs({
+  contentContainerStyle: { paddingHorizontal: 24 },
+  horizontal: true,
+  showsHorizontalScrollIndicator: false,
+})``;
+
+export const Hour = styled(RectButton)<HourProps>`
+  padding: 15px;
+  border-radius: 10px;
+  margin-right: 10px;
+
+  background: ${({ selected }) => (selected ? '#ff9000' : '#3e3b47')};
+  opacity: ${({ available }) => (available ? 1 : 0.3)};
+`;
+
+export const HourText = styled.Text<HourTextProps>`
+  font-family: 'RobotoSlab-Regular';
+  font-size: 16px;
+  color: ${({ selected }) => (selected ? '#232129' : '#f4ede8')};
+`;
+
+export const CreateAppointmentButton = styled(RectButton)`
+  height: 50px;
+  background: #ff9000;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 25px 25px;
+`;
+
+export const CreateAppointmentButtonText = styled.Text`
+  font-family: 'RobotoSlab-Medium';
+  font-size: 18px;
   color: #232129;
 `;
