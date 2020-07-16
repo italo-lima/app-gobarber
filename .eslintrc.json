@@ -24,6 +24,7 @@
   "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": "error",
+    "import/no-duplicates": "off",
     "no-shadow": "off",
     "camelcase": "off",
     "react/jsx-one-expression-per-line": "off",
