@@ -12,7 +12,7 @@
   <img alt="Go Barber" src="./.github/AppGobarber.gif" height="425" />
 </p>
 
-## :rocket: Tecnologias
+## :rocket: Technology
 
 :point_down: This project was developed with: :point_down:
 
