@@ -30,6 +30,10 @@ GoBarber is an app that allows users to schedule an appointment with their favor
 ## 💻 Executing
 
 ```bash
+# Clone this project
+$ git clone https://github.com/italo-lima/app-gobarber.git
+# Join folder
+$ cd app-gobarber
 # Install dependencies
 $ yarn
 # Android
