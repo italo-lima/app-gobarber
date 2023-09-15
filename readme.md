@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img alt="Go Barber" src="./github/AppGobarber.gif" height="425" />
+  <img alt="Go Barber" src="./.github/AppGobarber.gif" height="425" />
 </p>
 
 ## :rocket: Tecnologias
@@ -28,8 +28,6 @@
 GoBarber is an app that allows users to schedule an appointment with their favorite barber and show the barber their schedule for the day.
 
 ## 💻 Executing
-
-### :iphone: Mobile:
 
 ```bash
 # Install dependencies
